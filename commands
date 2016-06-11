@@ -1,7 +1,14 @@
 no of getting distinct twitter querys
-querygrp = df.groupby('query',index = false)
+querygrp = df.groupby('Query')
 querygrp.size()
 -------
 query to get info of a particular tweet::
 
 querygrp.get_group('twitter')
+---------
+maximum repeated query in tweet
+
+max(querygrp.size())
+min(querygrp.size())
+-------
+

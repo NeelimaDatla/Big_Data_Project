@@ -1,0 +1,7 @@
+no of getting distinct twitter querys
+querygrp = df.groupby('query',index = false)
+querygrp.size()
+-------
+query to get info of a particular tweet::
+
+querygrp.get_group('twitter')

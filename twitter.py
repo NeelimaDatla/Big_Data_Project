@@ -2,7 +2,7 @@ import json
 import pandas as pd
 import matplotlib.pyplot as plt
 """Reading the file"""
-tweets_data_path = 'namo.json'
+tweets_data_path = 'twitter_data1.txt'
 
 tweets_data = []
 tweets_file = open(tweets_data_path, "r")
@@ -32,9 +32,9 @@ ax.set_ylabel('Number of tweets' , fontsize=15)
 ax.set_title('Top 5 languages', fontsize=15, fontweight='bold')
 tweets_by_lang[:5].plot(ax=ax, kind='bar', color='red')
 
-"""Top 5 Countries""""
+"""Top 5 Countries"""
 tweets_by_country = tweets['country'].value_counts()
-
+print(len(tweets_by_country))
 fig, ax = plt.subplots()
 ax.tick_params(axis='x', labelsize=15)
 ax.tick_params(axis='y', labelsize=10)

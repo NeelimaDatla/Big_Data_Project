@@ -30,6 +30,8 @@ result = twitter.friendships.show(source_screen_name = source,
 #-----------------------------------------------------------------------
 following = result["relationship"]["target"]["following"]
 follows   = result["relationship"]["target"]["followed_by"]
-
+#--------------------------
+Printing the data
+#--------------------------
 print "%s following %s: %s" % (source, target, follows)
 print "%s following %s: %s" % (target, source, following)
